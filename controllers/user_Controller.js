@@ -66,7 +66,7 @@ module.exports.create = async (req, res) => {
       await token.save();
 
       // Send varification email
-      const link = `http://localhost:8000/users/confirm/${token.token}`;
+      const link = `${process.env.BASE_URL}/users/confirm/${token.token}`;
       await emailMailer.emailSend(users.email, "Email Verification", link);
       req.flash("success", "Email Verification link sent to your email");
       return res.redirect("back");
