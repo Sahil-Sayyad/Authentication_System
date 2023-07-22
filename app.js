@@ -1,8 +1,9 @@
 //import all required packages
+require('dotenv').config();
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 const db = require("./config/mongoose");
 const expressLayouts = require("express-ejs-layouts");
 //used for session cookie
@@ -40,8 +41,7 @@ app.use(
     },
     store: MongoStore.create(
       {
-        mongoUrl:
-          "YOUR_URL",
+        mongoUrl:process.env.MONGO_URL,
         autoRemove: "disabled",
       },
       function (err) {
