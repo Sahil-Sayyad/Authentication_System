@@ -41,7 +41,7 @@ app.use(
     store: MongoStore.create(
       {
         mongoUrl:
-          "mongodb+srv://igsahilsayyad:9325@auth.pze9l9o.mongodb.net/?retryWrites=true&w=majority",
+          "YOUR_URL",
         autoRemove: "disabled",
       },
       function (err) {
