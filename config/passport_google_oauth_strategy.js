@@ -11,7 +11,7 @@ passport.use(
       clientID:
         "YOUR_CLIENTID",
       clientSecret: "YOUR_SCRCRET",
-      callbackURL: "process.env.CALLBACK",
+      callbackURL: process.env.CALLBACK,
     },
     async function (accessToken, refreshToken, profile, done) {
       try {
