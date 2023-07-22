@@ -9,8 +9,8 @@ passport.use(
     new FacebookStrategy(
       {
         clientID:
-          "802731221525747",
-        clientSecret: "41de0920961ec2291b0c64e37a48cd31",
+          "YOUR_CLIENTID",
+        clientSecret: "YOUR_SECRETID",
         callbackURL: "http://localhost:8000/users/auth/facebook/callback",
       },
       //find a user
