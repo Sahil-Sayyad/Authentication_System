@@ -2,7 +2,7 @@
 const mongoose = require("mongoose");
 
 const mongoDBurl =
-  "mongodb+srv://igsahilsayyad:9325@auth.pze9l9o.mongodb.net/?retryWrites=true&w=majority";
+  "Your_URL";
 
 mongoose
   .connect(mongoDBurl)
