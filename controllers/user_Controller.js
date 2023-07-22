@@ -159,6 +159,8 @@ module.exports.forgetPasswordLink = async function (req, res) {
   }
   if (req.body.password == req.body.confirm_password) {
     user.password = req.body.password;
+      const salt = await bcrypt.genSalt(10);
+       user.password = await bcrypt.hash(user.password, salt);
     await user.updateOne({ password: req.body.password });
     req.flash("success", "Password Forget Sucessfully");
     return res.redirect("/users/sign-in");
