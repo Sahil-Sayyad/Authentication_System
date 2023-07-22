@@ -4,7 +4,7 @@
 
 <h2>🚀 Demo</h2>
 
-[https://github.com/Sahil-Sayyad/Authentication\_System](https://github.com/Sahil-Sayyad/Authentication_System)
+[https://github.com/Sahil-Sayyad/Authentication\_System](https://authsystem.up.railway.app/)
 
 <h2>Project Screenshots:</h2>
 
