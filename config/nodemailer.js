@@ -9,8 +9,8 @@ const path = require('path');
             port: 587,
             secure:false,
             auth: {
-                user: 'YOUR_USERNAME',
-                pass: 'YOUR_PASSWORD',
+                user: process.env.USER,
+                pass: process.env.PASS,
             },
         });
 //rendering ejs file for sending email data 
