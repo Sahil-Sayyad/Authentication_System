@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("https://qsf.fs.quoracdn.net/-4-ans_frontend_assets.images.home_page_bg_desktop.png-26-4770753d59b970e1.png");
+  background-size: cover;
+}
+/* Login.css */
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: fit-content;
+  background-repeat: no-repeat;
+}
+
+.login__container {
+  position: relative;
+  top: 4.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: 44%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.login__logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.login__logo > svg {
+  max-width: 150px;
+  object-fit: contain;
+}
+
+.login__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login__desc > h3 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: xx-large;
+  font-family: "Cedarville Cursive", cursive;
+  color: black;
+}
+.login__desc > p {
+  color: gray;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.login__emailPass {
+  position: relative;
+  top: -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0.5;
+  margin-left: 20px;
+  color: black;
+}
+
+.login__emailPass > h4 {
+  font-size: 1.6rem;
+  padding: 5px;
+  text-align: center;
+}
+
+.login__emailPass > p {
+  text-align: center;
+}
+
+.login__emailPass > p:hover {
+  color: #878686;
+}
+
+.login__inputFields {
+  position: relative;
+  right: 1.0rem;
+}
+
+.login__inputField {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.login__inputField > input {
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border: 1px solid lightgray;
+  background-color: rgb(251, 250, 250);
+  border-radius: 3px;
+}
+
+.login__inputField > input:focus {
+  border: 2px solid #000;
+}
+
+.login__forgButt {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login__forgButt > small {
+  color: gray;
+  cursor: pointer;
+}
+
+.login__forgButt > small:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.login__forgButt > button {
+  position: relative;
+  top: 15px;
+  padding: 9px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #222;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+}
+.login__forgButt > button:hover {
+  background-color: #eee;
+  color: #222;
+}
+
+.login__emailPass > button:hover {
+  background-color: #eee;
+  color: #222;
+}
+.login__emailPass > button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: #4f63fa;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login__emailPass > p:hover {
+  color: red;
+}
+
+.login__lang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.login__lang > p {
+  color: gray;
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.login__lang > p:hover {
+  color: gray;
+  margin-right: 5px;
+  text-decoration: underline;
+}
+
+.login__lang > .MuiSvgIcon-root {
+  color: gray;
+}
+
+.login__footer {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.login__footer > p {
+  color: gray;
+  font-size: small;
+  cursor: pointer;
+}
+
+.login__footer > p:hover {
+  text-decoration: underline;
+}
+
+input[type="submit"] {
+  position: relative;
+  top: -20px;
+  left: 100px;
+  padding: 9px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #1d1d1e;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #eee;
+  color: #222;
+}
+@media only screen and (max-width: 600px) {
+  .login__auth {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+
+  .login__authOptions {
+    display: flex;
+    width: 100%;
+    border-right: none;
+    flex: 1;
+  }
+
+  .login__emailPass {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 0;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .login__forgButt {
+    display: flex;
+    width: 100%;
+  }
+
+  .login__emailPass > button {
+    width: 50%;
+  }
+
+  .login__label > h4 {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .login__authDesc {
+    margin-bottom: 0px;
+  }
+}

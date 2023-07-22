@@ -1,0 +1,21 @@
+<!-- linking css stylesheet -->
+<link rel="stylesheet" href="/stylesheets/home.css" />
+
+<main>
+  <!-- display all user information  -->
+  <div class="container">
+    <% if(locals.user){ %>
+      <div class="info">
+        <!-- user name -->
+        <li><b><%=user.name%></b></li>
+        <div class="singout">
+          <!-- sign out button -->
+          <button class="button-signout" role="button"><a href="/users/sign-out">Sign Out</a></button>
+           <!-- forget password -->
+          <button class="button-resetPassword" role="button"><a href="/users/forget-password">Reset Password</a></button>
+          <% }%>
+        </div>
+      </div>
+     
+  </div>
+</main>

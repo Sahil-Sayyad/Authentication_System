@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="/stylesheets/sign_in.css" />
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<div class="login">
+  <div class="login__container">
+    <div class="login__logo">
+      
+    </div>
+    <div class="login__desc">
+      <p style="color: royalblue; font-size: 25px">
+        HandCrafted with ❤️ by
+      </p>
+      <h3>Sahil Sayyad</h3>
+    </div>
+    <div class="login__auth">
+      <div class="login__authOptions">
+        <div class="login__authOption">
+          <img
+            class="login__googleAuth"
+            src="https://img.icons8.com/color/48/000000/google-logo.png"
+            alt=""
+          />
+          <p><a href="/users/auth/google">Continue With Google</a></p>
+        </div>
+        <div class="login__authOption">
+          <img
+            alt="facebook"
+            src="https://img.icons8.com/color/48/000000/facebook-new.png"
+          />
+          <span> <a href="/users/auth/facebook">Continue With Facebook</a></span>
+        </div>
+        <div class="login__authDesc">
+          <p>
+            <a href="/users/sign-up"><span style="color: blue; cursor: pointer">Sign Up With Email</span></a>
+            . By continuing you indicate that you have read and agree to QAS's
+            <span style="color: blue; cursor: pointer">Terms of Service</span>
+            and
+            <span style="color: blue; cursor: pointer">Privacy Policy</span>
+            .
+          </p>
+        </div>
+      </div>
+      <div class="login__emailPass">
+        <h4>Login</h4>
+        <div class="login__inputFields">
+          <form action="/users/create-session" method="post">
+            <div class="login__inputField">
+              <input type="email" name="email" placeholder="Email" required/>
+            </div>
+            <div class="login__inputField">
+              <input type="password" name="password" placeholder="Password" required/>
+            </div>
+            <span class="g-recaptcha login__inputField" data-sitekey="6LekvUQnAAAAAGhRHi2wt6EtfV30jC8raNPZTUrW"></span>
+          </div>
+          <div class="login__forgButt">
+            <small><a href="/users/forget-password">Forgot Password?</a></small>
+            <button>Login</button>
+          </div>
+        </form>
+        <p style="font-size: 13px; color: #777; cursor: pointer">
+          New user | Register
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

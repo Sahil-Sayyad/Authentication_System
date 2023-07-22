@@ -1,0 +1,43 @@
+<!-- stylesheets links -->
+<link rel="stylesheet" href="/stylesheets/sign_up.css" />
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<!-- main coninter -->
+<div class="login">
+  <div class="login__container">
+    <div class="login__logo">
+    </div>
+    <div class="login__desc">
+      <p style="color: royalblue; font-size: 25px">
+        HandCrafted with ❤️ by
+      </p>
+      <h3>Sahil Sayyad</h3>
+    </div>
+    
+      <div class="login__emailPass">
+        <h4>Sign Up</h4>
+        <div class="login__inputFields">
+          <form action="/users/create" method="post">
+            <div class="login__inputField">
+              <input type="text" name="name" placeholder="Name" required/>
+            </div>
+            <div class="login__inputField">
+              <input type="email" name="email" placeholder="Email" required/>
+            </div>
+            <div class="login__inputField">
+              <input type="password" name="password" placeholder="Password" required/>
+            </div>
+            <div class="login__inputField">
+              <input type="password" name="confirm_password" placeholder="Confirm Password" required/>
+            </div>
+            <span class="g-recaptcha login__inputField" data-sitekey="6LekvUQnAAAAAGhRHi2wt6EtfV30jC8raNPZTUrW"></span>
+            <div class="login__forgButt">
+                <button>Sign Up</button>
+            </div>
+        </form>
+        <a href="/users/sign-in"><input class="btn" type="submit" value="Login"></input></a> 
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
