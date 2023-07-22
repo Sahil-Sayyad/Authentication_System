@@ -1,8 +1,7 @@
 // import required package
 const mongoose = require("mongoose");
 
-const mongoDBurl =
-  "Your_URL";
+const mongoDBurl = process.env.MONGO_URL;
 
 mongoose
   .connect(mongoDBurl)
