@@ -11,7 +11,7 @@ passport.use(
         clientID:
           "YOUR_CLIENTID",
         clientSecret: "YOUR_SECRETID",
-        callbackURL: "http://localhost:8000/users/auth/facebook/callback",
+        callbackURL: process.env.CALLBACK,
       },
       //find a user
       async function (accessToken, refreshToken, profile, done) {
