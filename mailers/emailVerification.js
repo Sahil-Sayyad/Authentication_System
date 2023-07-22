@@ -6,7 +6,7 @@ exports.emailSend = async (email, subject, link) => {
   try {
     let htmlString = nodeMailer.renderTemplate({ link: link }, "/email.ejs");
     await nodeMailer.transporter.sendMail({
-      from: "YOUR_EMAIL",
+      from: process.env.EMAIL,
       to: email,
       subject: subject,
       text:
