@@ -9,13 +9,16 @@
 <h2>Project Screenshots:</h2>
 
 <b><i>Sign In Page </i> </b> <br><br>
-  ![sign_in](https://github.com/Sahil-Sayyad/Authentication_System/assets/96423459/22877934-d1a0-452a-9372-682b6d403cab)
+![sign_in](https://github.com/Sahil-Sayyad/Authentication_System/assets/96423459/477e8d81-80ce-4ca2-bbec-514a9bc16ad8)
+
 <br><br><b><i>Sign Up Page </i> </b> <br><br>
-  ![sing_up](https://github.com/Sahil-Sayyad/Authentication_System/assets/96423459/157385e9-077b-43e0-99b6-724d68457be4)
+![sing_up](https://github.com/Sahil-Sayyad/Authentication_System/assets/96423459/73aa38ad-b71a-4ee6-b5f8-2ee305f03d8d)
+
 <br><br><b><i>Reset Password Page </i> </b> <br><br>
-![forgetpass](https://github.com/Sahil-Sayyad/Authentication_System/assets/96423459/684518bf-5ff2-4dfb-9202-fc887518b17e)
+![forgetpass](https://github.com/Sahil-Sayyad/Authentication_System/assets/96423459/237371f7-1fc9-44c4-9c49-dbd0d63f1324)
+
 <br><br><b><i>Home Page </i> </b> <br><br>
-![home (2)](https://github.com/Sahil-Sayyad/Authentication_System/assets/96423459/600f7bbe-fcad-4a0a-9a15-8e78e7e95e18)
+![home (2)](https://github.com/Sahil-Sayyad/Authentication_System/assets/96423459/0c13837a-6a90-4478-af07-7dd1eee591d5)
 
 <h2>🧐 Features</h2>
 
