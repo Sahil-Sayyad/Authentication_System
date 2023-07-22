@@ -8,7 +8,7 @@ const emailMailer = require("../mailers/emailVerification");
 //render sign-in page
 module.exports.signIn = async (req, res) => {
   if (req.isAuthenticated()) {
-    req.flash("success", "Congrats you already Singed In");
+    req.flash("success", "Changes applyed successfully ");
     return res.redirect("/");
   }
   req.flash("success", "Please Sign In For Go To Home Page");
